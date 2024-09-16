@@ -1,0 +1,119 @@
+/*work sans from google*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  background: black;
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  margin: 10px;
+}
+
+.main-bar{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.heading {
+  text-align: center;
+}
+
+nav>ul{
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+}
+
+h1:hover{
+  color: red;
+}
+
+.navigation {
+  text-decoration: none;
+  padding: 10px;
+  background: red;
+  border-radius: 10px;
+}
+
+.navigation:hover{
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 10px;
+  color: rgb(251, 0, 0);
+  text-decoration: lawngreen;
+}
+
+.banner {
+  align-items: center;
+  text-align: center;
+}
+
+.para{
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0 190px;
+}
+
+.btn-first {
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  background: red;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.btn-first:hover{
+  background: white;
+  color: red;
+}
+
+.banner-img{
+  margin-top: 20px;
+  width: 100%;
+}
+
+@media screen and (min-width:576px) and (max-width:992px){
+  .main-bar{
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  nav>ul{
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:576px){
+  *{
+    margin: 3px;
+  }
+
+  .main-bar{
+    flex-direction: column;
+  }
+
+  nav>ul{
+    justify-content: center;
+  }
+
+  .para{
+    margin: 0 0;
+  }
+
+  .navigation{
+    padding: 5px;
+    margin: 1px;
+  }
+
+  .navigation:hover{
+    padding: 5px;
+  }
+}
+
+
+
+

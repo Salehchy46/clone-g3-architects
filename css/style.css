@@ -4,8 +4,7 @@
 /*Universal Sectors*/
 
 * {
-  background: black;
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: "Work Sans", sans-serif;
   margin: 10px;
 }
@@ -115,12 +114,88 @@ main{
 
 .sect-text2{
   font-size: 2.8rem;
-  color: #ff900e;
+  color: #ff0000;
 }
 
 .sect-para{
   font-size: 16px;
   font-weight: 700px;
+}
+
+/*Features main section*/
+.feature-main{
+  display: flex;
+  margin: 20px;
+}
+
+.feature-head{
+  padding: 10px;
+  border-left: 3px solid #ff0000;
+  font-size: 30px;
+}
+
+.features-description .feature-text{
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 5px 30px 0px #000000;
+}
+
+.feature-img{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.card{
+  padding: 40px;
+  background-color: #ff0000;
+  background: #ff0000;
+  border-radius: 10px;
+  text-align: center;
+  width: 342px;
+  position: relative;
+  bottom: 100px;
+}
+
+ftr-img{
+  height: 90%;
+  margin-left: 90px;
+}
+
+.card h2{
+  font-size: 4rem;
+  margin: 0;
+}
+
+.card p{
+  font-size: 1.5rem;
+}
+
+.card-container{
+  /*display: flex;*/
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+/*Sponsors section*/
+.sponsors{
+  text-align: center;
+}
+
+.sponsors-img-container{
+  margin-top: 50px;
+  align-items: center;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.sponsors-img-container{
+  width: 165px;
 }
 
 @media screen and (min-width:576px) and (max-width:992px){
@@ -155,6 +230,11 @@ main{
 
   .team{
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .feature-main
+  .sponsors-img-container{
+    flex-direction: column;
   }
 }
 
@@ -215,8 +295,17 @@ main{
   .sect{
     text-align: center;
   }
+
+  .feature-main{
+    flex-direction: column;
+  }
+
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sponsors-img-container{
+    flex-direction: column;
+  }
 }
-
-
-
-
